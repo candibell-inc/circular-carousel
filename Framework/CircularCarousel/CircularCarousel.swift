@@ -54,8 +54,8 @@ struct CircularCarouselConstants {
 @IBDesignable open class CircularCarousel: UIView {
     
     // Delegate and Datasource
-    internal var _delegate: CircularCarouselDelegate?
-    public var delegate: CircularCarouselDelegate? {
+    internal weak var _delegate: CircularCarouselDelegate?
+    public weak var delegate: CircularCarouselDelegate? {
         get {
             return _delegate
         }
@@ -67,8 +67,8 @@ struct CircularCarouselConstants {
         }
     }
     
-    internal var _dataSource: CircularCarouselDataSource?
-    public var dataSource: CircularCarouselDataSource? {
+    internal weak var _dataSource: CircularCarouselDataSource?
+    public weak var dataSource: CircularCarouselDataSource? {
         get {
             return _dataSource
         }

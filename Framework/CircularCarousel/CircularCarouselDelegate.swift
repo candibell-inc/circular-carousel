@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol CircularCarouselDelegate {
+public protocol CircularCarouselDelegate : AnyObject {
     func carouselWillBeginScrolling(_ carousel: CircularCarousel)
     func carouselDidEndScrolling(_ carousel: CircularCarousel)
     
